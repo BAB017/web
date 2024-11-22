@@ -404,7 +404,7 @@ btnSiguiente.addEventListener("click",()=>{
             location.href = "menu.html";
         }else{
             //lo mando a la pantalla final
-            location.href = "file:///C:/Users/Hp/Pictures/final.html";
+            location.href = "Pictures/final.html";
         }
         
     }
