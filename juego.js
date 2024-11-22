@@ -201,26 +201,6 @@ const preguntas = [
         correcta: "b"
     },
     {
-        id: 21,
-        categoria: "juegos",
-        titulo: "INTEGRANTES",
-        opcionA: "Meza García Juan Ricardo",
-        opcionB: "Quijano Jiménez Leonardo Gabriel",
-        opcionC: "Mendez Hernández Pablo Alexander",
-        opcionD: "Ruiz Cruz Javier",
-        correcta: ""
-    },
-    {
-        id: 22,
-        categoria: "juegos",
-        titulo: "Mantenimiento automotriz",
-        opcionA: "3°",
-        opcionB: "1998",
-        opcionC: "B",
-        opcionD: "",
-        correcta: ""
-    },
-    {
         id: 27,
         categoria: "peliculas",
         titulo: "Why didn’t I see the stop sign?",
