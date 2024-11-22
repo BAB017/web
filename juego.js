@@ -203,52 +203,22 @@ const preguntas = [
     {
         id: 21,
         categoria: "juegos",
-        titulo: "¿Cuál es el fontanero más famoso en el mundo de los videojuegos?",
-        opcionA: "Sonic",
-        opcionB: "Link",
-        opcionC: "Mario",
-        opcionD: "Master Chief",
-        correcta: "c"
+        titulo: "INTEGRANTES",
+        opcionA: "Meza García Juan Ricardo",
+        opcionB: "Quijano Jiménez Leonardo Gabriel",
+        opcionC: "Mendez Hernández Pablo Alexander",
+        opcionD: "Ruiz Cruz Javier",
+        correcta: ""
     },
     {
         id: 22,
         categoria: "juegos",
-        titulo: "¿En qué año se lanzó el juego 'The Legend of Zelda: Ocarina of Time'?",
-        opcionA: "1996",
+        titulo: "Mantenimiento automotriz",
+        opcionA: "3°",
         opcionB: "1998",
-        opcionC: "2000",
-        opcionD: "2002",
-        correcta: "b"
-    },
-    {
-        id: 23,
-        categoria: "juegos",
-        titulo: "¿Cuál es la empresa creadora de la consola PlayStation?",
-        opcionA: "Microsoft",
-        opcionB: "Sony",
-        opcionC: "Nintendo",
-        opcionD: "Sega",
-        correcta: "b"
-    },
-    {
-        id: 24,
-        categoria: "juegos",
-        titulo: "¿Quién es el protagonista del juego 'The Witcher 3: Wild Hunt'?",
-        opcionA: "Geralt of Rivia",
-        opcionB: "Ezio Auditore",
-        opcionC: "Aloy",
-        opcionD: "Joel",
-        correcta: "a"
-    },
-    {
-        id: 25,
-        categoria: "juegos",
-        titulo: "¿Cuál es el juego más vendido de todos los tiempos?",
-        opcionA: "Minecraft",
-        opcionB: "Tetris",
-        opcionC: "Grand Theft Auto V",
-        opcionD: "Super Mario Bros.",
-        correcta: "b"
+        opcionC: "B",
+        opcionD: "",
+        correcta: ""
     },
     {
         id: 26,
