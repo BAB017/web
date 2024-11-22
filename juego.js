@@ -221,16 +221,6 @@ const preguntas = [
         correcta: ""
     },
     {
-        id: 26,
-        categoria: "peliculas",
-        titulo: " Why did i decide to drive instead of walking?",
-        opcionA: "Because it was raining heavily",
-        opcionB: "Because it was sunny",
-        opcionC: "Because i forgot my umbrella",
-        opcionD: "Because i was late",
-        correcta: "a"
-    },
-    {
         id: 27,
         categoria: "peliculas",
         titulo: "Why didn’t I see the stop sign?",
@@ -374,7 +364,7 @@ btnSiguiente.addEventListener("click",()=>{
             location.href = "menu.html";
         }else{
             //lo mando a la pantalla final
-            location.href = "Final.html";
+            location.href = "final.html";
         }
         
     }
