@@ -200,7 +200,7 @@ const preguntas = [
         opcionD: "Use your phone’s GPS for assistance",
         correcta: "b"
     },
-       {
+    {
         id: 21,
         categoria: "juegos",
         titulo: "INTEGRANTES",
@@ -208,7 +208,7 @@ const preguntas = [
         opcionB: "Quijano Jiménez Leonardo Gabriel",
         opcionC: "Mendez Hernández Pablo Alexander",
         opcionD: "Ruiz Cruz Javier",
-        correcta: ""
+        correcta: "a"
     },
     {
         id: 22,
@@ -218,7 +218,7 @@ const preguntas = [
         opcionB: "1998",
         opcionC: "B",
         opcionD: "",
-        correcta: ""
+        correcta: "v"
     },
     {
         id: 27,
