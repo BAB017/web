@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title> Game Quiz </title>
+</head>
+<body onclick="PlayAudio()">
+    <div class="container">
+        <img src="auris.png" alt="" class="img">
+        <header>
+            <div class="puntaje">
+                <img src="puntos.png" alt="">
+                <span class="puntos" id="puntos"> 0 </span>
+            </div>
+            <h1> QUIZ </h1>
+            <div class="jugador">
+                <span class="nombre" id="nombre"> Martín </span>
+                <img src="user.png" alt="">
+            </div>
+        </header>
+
+        <!-- SECCIÓN MENU DEL JUEGO -->
+        <main class="menu">
+            <h2>Hola <span id="nombre-jugador"> Martín </span></h2>
+            <p> Elige una categoría.. </p>
+            <div class="categorias">
+                <div class="categoria" id="general">
+                    <img src="general.png" alt="" class="foto-categoria">
+                    <h4> Express Sequence </h4>
+                </div>
+                <div class="categoria" id="musica">
+                    <img src="musica.png" alt="" class="foto-categoria">
+                    <h4> Express Contrast </h4>
+                </div>
+                <div class="categoria" id="peliculas">
+                    <img src="peliculas.png" alt="" class="foto-categoria">
+                    <h5> Express Cause and Effect </h5>
+                </div>
+                <div class="categoria" id="deportes">
+                    <img src="deportes.png" alt="" class="foto-categoria">
+                    <h4> Useful Connectors </h4>
+                </div>
+                <div class="categoria" id="programacion">
+                    <img src="programacion.png" alt="" class="foto-categoria">
+                    <h4> Other Useful Connectors </h4>
+                </div>
+                <div class="categoria" id="juegos">
+                    <img src="juegos.png" alt="" class="foto-categoria">
+                    <h3> Members </h3>
+                </div>
+            </div>
+        </main>
+    </div>
+
+ 
+    <audio id="musica" loop>
+        <source src="Stand By Me.mp3" type="audio/mpeg">
+        Este navegador no acepta formato de audio.
+    </audio>
+
+    <script>
+        // Inicia o reanuda la música al cargar la página
+        window.addEventListener("DOMContentLoaded", () => {
+            const musica = document.getElementById("musica");
+
+            // Verificar si LocalStorage tiene la información de reproducción
+            const audioState = localStorage.getItem("audioPlaying");
+
+            if (audioState === "true") {
+                musica.play();
+            }
+
+            // Guardar el estado del audio cuando comience a reproducirse
+            musica.addEventListener("play", () => {
+                localStorage.setItem("audioPlaying", "true");
+            });
+
+            // Guardar el estado del audio cuando se pause
+            musica.addEventListener("pause", () => {
+                localStorage.setItem("audioPlaying", "false");
+            });
+        });
+
+        // Función manual para iniciar la música al hacer clic
+        function PlayAudio() {
+            const musica = document.getElementById("musica");
+            if (musica.paused) {
+                musica.play();
+            }
+        }
+    </script>
+
+    <script src="menu.js"></script>
+</body>
+</html>

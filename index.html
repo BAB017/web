@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title> Game Quiz </title>
+</head>
+<body onclick="PlayAudio()">
+    <div class="container">
+        <img src="img/auris.png" alt="" class="img">
+        <header>
+            <div class="puntaje">
+                <img src="img/puntos.png" alt="">
+                <span class="puntos"> 0 </span>
+            </div>
+            <h1> QUIZ </h1>
+            <div class="jugador">
+                <span class="nombre">-</span>
+                <img src="img/user.png" alt="">
+            </div>
+        </header>
+
+        <!-- PANTALLA DE BIENVENIDA -->
+        <main class="inicio">
+            <h2> Bienvenido!! </h2>
+            <p> Ingresa tu nombre para jugar </p>
+            <input type="text" id="nombre">
+            <button class="btn" id="comenzar"> Comenzar </button>
+        </main>
+    </div>
+
+</div>
+
+<audio id="musica" loop>
+    <source src="Stand By Me.mp3" type="audio/mpeg">
+    Este navegador no acepta formato de audio.
+</audio>
+
+<script>
+    // Inicia o reanuda la música al cargar la página
+    window.addEventListener("DOMContentLoaded", () => {
+        const musica = document.getElementById("musica");
+
+        // Verificar si LocalStorage tiene la información de reproducción
+        const audioState = localStorage.getItem("audioPlaying");
+
+        if (audioState === "true") {
+            musica.play();
+        }
+
+        // Guardar el estado del audio cuando comience a reproducirse
+        musica.addEventListener("play", () => {
+            localStorage.setItem("audioPlaying", "true");
+        });
+
+        // Guardar el estado del audio cuando se pause
+        musica.addEventListener("pause", () => {
+            localStorage.setItem("audioPlaying", "false");
+        });
+    });
+
+    // Función manual para iniciar la música al hacer clic
+    function PlayAudio() {
+        const musica = document.getElementById("musica");
+        if (musica.paused) {
+            musica.play();
+        }
+    }
+</script>
+
+    <script src="index.js"></script>
+</body>
+</html>
